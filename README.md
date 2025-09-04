@@ -111,6 +111,9 @@ The painting process might take hours depending on your computing device perform
 Instead of using DeepLab V3+, you can also generate segmentation score based on HMA. If you want to use HMA, please run the following commands under `./painting`. It will download the required weight and handles the whole segmentation process. Again, it might take hours to finish.
 ```
 $ sh generate_hma_score.sh
+# 用到的两个权重文件百度网盘链接
+通过网盘分享的文件：cityscapes_ocrnet.HRNet_Mscale_outstanding-turtle.pth等2个文件
+链接: https://pan.baidu.com/s/1_vMoaYOR4uL954i8EbE3Qg 提取码: uk41
 ```
 The segmentation score will be saved under `./detector/data/kitti/training/score_hma/`. When you finish running the script, check the `painting.py` script and set `SEG_NET = 2`. Then refer to [Painting](#painting) for the following steps.
 
